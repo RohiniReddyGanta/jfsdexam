@@ -1,0 +1,61 @@
+public class Book {
+   
+    private String bookName;
+    private int bookId;
+    private String bookAuthor;
+
+    
+    public Book(String bookName, int bookId, String bookAuthor) {
+        this.bookName = bookName;
+        this.bookId = bookId;
+        this.bookAuthor = bookAuthor;
+    }
+
+  
+    public String getBookName() {
+        return bookName;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+
+    public int getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(int bookId) {
+        this.bookId = bookId;
+    }
+
+  
+    public String getBookAuthor() {
+        return bookAuthor;
+    }
+
+    public void setBookAuthor(String bookAuthor) {
+        this.bookAuthor = bookAuthor;
+    }
+
+    // Main method to test the class
+    public static void main(String[] args) {
+        // Create a Book object
+        Book myBook = new Book("The Great Gatsby", 1, "F. Scott Fitzgerald");
+
+        // Access and modify attributes using getters and setters
+        System.out.println("Book Name: " + myBook.getBookName());
+        System.out.println("Book ID: " + myBook.getBookId());
+        System.out.println("Book Author: " + myBook.getBookAuthor());
+
+        // Modify attributes
+        myBook.setBookName("1984");
+        myBook.setBookId(2);
+        myBook.setBookAuthor("George Orwell");
+
+        // Print updated attributes
+        System.out.println("Updated Book Name: " + myBook.getBookName());
+        System.out.println("Updated Book ID: " + myBook.getBookId());
+        System.out.println("Updated Book Author: " + myBook.getBookAuthor());
+    }
+}
